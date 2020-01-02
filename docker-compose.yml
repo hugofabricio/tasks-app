@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+    mysql:
+      image: mysql:5.7
+      container_name: adonis-mysql
+      environment:
+        - MYSQL_ROOT_PASSWORD=docker
+        - MYSQL_DATABASE=app
+        - MYSQL_USER=superlogica
+        - MYSQL_PASSWORD=docker
+      ports:
+        - "3306:3306"
